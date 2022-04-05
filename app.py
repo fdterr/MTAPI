@@ -10,7 +10,12 @@
 """
 
 from mtapi.mtapi import Mtapi
-from flask import Flask, request, jsonify, render_template, abort, redirect
+from flask import Flask
+from flask import request
+from flask import jsonify
+from flask import render_template
+from flask import abort
+from flask import redirect
 from flask.json import JSONEncoder
 from datetime import datetime
 from functools import wraps, reduce
