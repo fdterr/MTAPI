@@ -1,5 +1,4 @@
 ## Changes Made to Original Package
-<br />
 
 ### **`python/scripts/make_stations_json.py`:**
 
