@@ -1,6 +1,6 @@
 ## Running
 ### Python
-`$ cd python` 
+`$ cd python`  
 `$ python3 -m venv .venv`  
 `$ source .venv/bin/activate`  
 `$ python app.py`
