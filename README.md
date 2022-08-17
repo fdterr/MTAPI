@@ -4,7 +4,7 @@
 `$ source .venv/bin/activate`  
 `$ python app.py`
 ### Node
-`$ cd node/` 
+`$ cd node/`  
 `$ node index.js`
 
 ### PM2
