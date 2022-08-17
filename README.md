@@ -14,7 +14,7 @@
 `$ source .venv/bin/activate`  
 `$ pm2 start app.py --name mtapi --interpreter python3`
 #### Node:
-`$ cd node/` 
+`$ cd node/`  
 `$ pm2 start index.js`
 
 ## Changes Made to Original Package
