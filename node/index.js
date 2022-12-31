@@ -4,9 +4,8 @@ const app = express();
 const port = 3000;
 
 app.get('/', async (req, res) => {
-  const { data } = await axios.get(
-    'http://127.0.0.1:5000/by-id/1d54,1ccf,6766,9b86,a3a3'
-  );
+  const url = `http://${process.env.mtapi_url}:5000/by-id/1d54,1ccf,6766,9b86,a3a3`
+  const { data } = await axios.get(url);
 
   const subwayList = [
     'A',
