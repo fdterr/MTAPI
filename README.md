@@ -1,4 +1,5 @@
-## Running
+# Running
+## Standalone
 ### Python
 `$ cd python`  
 `$ python3 -m venv .venv`  
@@ -18,6 +19,13 @@
 `$ cd node/`  
 `$ pm2 start index.js`
 
+
+## Docker
+Please start things in the following order:
+1. Python: `docker run -p 5000:5000 fdterr/mtapi:latest`
+1. Nodejs
+
+---
 ## Changes Made to Original Package
 
 ### **`python/scripts/make_stations_json.py`:**
