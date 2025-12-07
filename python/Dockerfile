@@ -11,4 +11,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN sed -i "s|from collections import Mapping|from collections.abc import Mapping |g" /usr/local/lib/python3.10/site-packages/markupsafe/__init__.py
 
-CMD ["python3", "app.py", "--host=127.0.0.1"]
+CMD ["python3", "app.py", "--host=0.0.0.0"]

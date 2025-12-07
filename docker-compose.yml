@@ -1,0 +1,25 @@
+---
+version: "3.4"
+services:
+  mtapi-python:
+    image: fdterr/mtapi:0.7
+    container_name: mtapi-python
+    networks:
+      - mtapi-network
+    restart: unless-stopped
+
+  mtapi-js:
+    image: fdterr/mtapi-js:0.83
+    container_name: mtapi-js
+    networks:
+      - mtapi-network
+    ports:
+      - 8000:3000
+    environment:
+      - NODE_ENV=development
+      - DEBUG=express:*
+    restart: unless-stopped
+
+networks:
+  mtapi-network:
+    external: true
